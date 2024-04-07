@@ -1,0 +1,109 @@
+body {
+	font-size: 16px;
+	width: 60ch;
+	min-height: 20rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0 0 0.5rem 0;
+}
+
+ul {
+	display: block;
+	list-style: none;
+	padding: 0;
+}
+
+a,
+a:visited {
+	color: initial;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.25rem;
+}
+
+#tabs [type="radio"] {
+	display: none;
+}
+
+.tab {
+	display: inline-block;
+	margin: 0 0.25rem;
+}
+
+.tab,
+.tab * {
+	cursor: pointer;
+}
+
+.tab:hover {
+	border-bottom: dotted 2px black;
+}
+
+.tab:has([type="radio"]:checked) {
+	border-bottom: solid 2px black;
+}
+
+.content {
+	display: none;
+}
+
+main:has(#tab-select-hn:checked) #content-hn,
+main:has(#tab-select-lobsters:checked) #content-lobsters,
+main:has(#tab-select-lemmy:checked) #content-lemmy {
+	display: initial;
+}
+
+#tab-hn,
+#content-hn a,
+#content-hn a:visited {
+	color: #ff4000;
+}
+
+#tab-lobsters,
+#content-lobsters a,
+#content-lobsters a:visited {
+	color: #500000;
+}
+
+.content .info,
+h3 {
+	color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+
+	body,
+	a,
+	a:visited {
+		color: white;
+		border-color: white !important;
+		background-color: black;
+	}
+
+	.content .info,
+	h3 {
+		color: #ccc;
+	}
+
+	.tab:hover {
+		border-bottom: dotted 2px #ccc;
+	}
+
+	.tab:has([type="radio"]:checked) {
+		border-bottom: solid 2px #ccc;
+	}
+
+
+	#tab-lobsters,
+	#content-lobsters a,
+	#content-lobsters a:visited {
+		color: #ba0000;
+	}
+}

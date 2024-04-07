@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>What We Say</title>
+	<link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+	<header>
+		<h1>What we say...</h1>
+		<h2 id="about-title"></h2>
+		<h3 id="about-url"></h3>
+		<section id="message"></section>
+	</header>
+	<main>
+		<ul id="tabs">
+			<li class="tab" id="tab-hn">
+				<label for="tab-select-hn">
+					<input type="radio" name="tab-select" id="tab-select-hn" checked>
+					Hacker News
+					<span id="tab-status-hn"></span>
+				</label>
+			</li>
+			<li class="tab" id="tab-lobsters">
+				<label for="tab-select-lobsters">
+					<input type="radio" name="tab-select" id="tab-select-lobsters">
+					Lobsters
+					<span id="tab-status-lobsters"></span>
+				</label>
+			</li>
+			<li class="tab" id="tab-lemmy">
+				<label for="tab-select-lemmy">
+					<input type="radio" name="tab-select" id="tab-select-lemmy">
+					Lemmy
+					<span id="tab-status-lemmy"></span>
+				</label>
+			</li>
+		</ul>
+		<section id="contents">
+			<div class="content" id="content-hn"></div>
+			<div class="content" id="content-lobsters"></div>
+			<div class="content" id="content-lemmy"></div>
+		</section>
+	</main>
+	<script src="popup.js"></script>
+</body>
+
+</html>

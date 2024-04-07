@@ -1,0 +1,32 @@
+{
+	"name": "What We Say",
+	"description": "List posts about the current page on various discussion sites",
+	"version": "0.1.0",
+
+	"manifest_version": 3,
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "whatwesay@nc7s.com"
+		}
+	},
+
+	"icons": {
+		"512": "icon.png"
+	},
+
+	"permissions": [
+		"activeTab",
+		"storage"
+	],
+
+	"host_permissions": [
+		"https://lobste.rs/s/*",
+		"https://html.duckduckgo.com/*"
+	],
+
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "icon.png"
+	}
+}
