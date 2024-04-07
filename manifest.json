@@ -12,7 +12,7 @@
 	},
 
 	"icons": {
-		"512": "icon.png"
+		"256": "icon.png"
 	},
 
 	"permissions": [
