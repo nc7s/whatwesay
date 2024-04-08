@@ -15,7 +15,6 @@ search is planned.
 
 .Permissions
 - activeTab: to get URL and title of the current active tab
-- storage: to store and read configuration
 - Host permission on https://lobste.rs/: to retrieve information of its posts
 - Host permission on https://html.duckduckgo.com/: to search Lobsters posts
 

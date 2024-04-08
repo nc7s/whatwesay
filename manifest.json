@@ -16,8 +16,7 @@
 	},
 
 	"permissions": [
-		"activeTab",
-		"storage"
+		"activeTab"
 	],
 
 	"host_permissions": [
