@@ -165,14 +165,15 @@ async function queryAndShow(source, { url, title }) {
  */
 
 async function searchHN({ url, title }) {
-	const algoliaUrl = `http://hn.algolia.com/api/v1/search?query=${encodeURIComponent(url)}`
+	const algoliaUrl = new URL('http://hn.algolia.com/api/v1/search')
+	algoliaUrl.searchParams.set('query', url)
+	algoliaUrl.searchParams.set('tags', 'story')
 	console.log('searchHN', { algoliaUrl })
 	const response = await fetch(algoliaUrl)
 	if (response.status !== 200) throw 'Request to Algolia search API failed'
 
 	const json = await response.json()
 	const results = json.hits
-		.filter(item => item.comment_text === undefined)
 		.filter(item => item.url === url)
 		.map(item => ({
 			title: item.title,
