@@ -173,6 +173,7 @@ async function searchHN({ url, title }) {
 	const json = await response.json()
 	const results = json.hits
 		.filter(item => item.comment_text === undefined)
+		.filter(item => item.url === url)
 		.map(item => ({
 			title: item.title,
 			url: `https://news.ycombinator.com/item?id=${item.story_id}`,
