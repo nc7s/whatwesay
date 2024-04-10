@@ -6,6 +6,8 @@ https://chromewebstore.google.com/detail/what-we-say/ldpiodgcecoajgcmbkaionbkaeo
 A browser extension to list posts about the currently opened page on various
 discussion sites.
 
+image:assets/screenshot-firefix-browser.png[Screenshot of opened extension]
+
 .Supported sites
 - https://news.ycombinator.com[Hacker News]
 - https://lobste.rs[Lobsters]
