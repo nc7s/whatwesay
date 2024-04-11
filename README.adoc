@@ -6,6 +6,11 @@ https://chromewebstore.google.com/detail/what-we-say/ldpiodgcecoajgcmbkaionbkaeo
 A browser extension to list posts about the currently opened page on various
 discussion sites.
 
+Install for
+https://addons.mozilla.org/en-US/firefox/addon/whatwesay/[Firefox]
+or
+https://chromewebstore.google.com/detail/what-we-say/ldpiodgcecoajgcmbkaionbkaeolajhg[Chrome].
+
 image:assets/screenshot-firefix-browser.png[Screenshot of opened extension]
 
 .Supported sites
