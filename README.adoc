@@ -1,7 +1,9 @@
 = What We Say… about this page?
 
+////
 https://addons.mozilla.org/en-US/firefox/addon/whatwesay/[image:https://img.shields.io/amo/users/whatwesay?style=for-the-badge&logo=firefox&label=Firefox%20Add-on[Firefox Add-on]]
 https://chromewebstore.google.com/detail/what-we-say/ldpiodgcecoajgcmbkaionbkaeolajhg[image:https://img.shields.io/chrome-web-store/users/ldpiodgcecoajgcmbkaionbkaeolajhg?style=for-the-badge&logo=google-chrome&label=Chrome%20extension[Chrome Web Store]]
+////
 
 A browser extension to list posts about the currently opened page on various
 discussion sites.
