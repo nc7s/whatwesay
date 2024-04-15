@@ -1,7 +1,7 @@
 {
 	"name": "What We Say",
 	"description": "List posts about the current page on various discussion sites",
-	"version": "0.1.0",
+	"version": "0.1.1",
 
 	"manifest_version": 3,
 

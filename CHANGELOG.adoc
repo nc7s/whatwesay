@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on https://keepachangelog.com/en/1.1.0/[Keep a Changelog],
 and this project adheres to https://semver.org/spec/v2.0.0.html[Semantic Versioning].
 
+== <<Unreleased>>
+
+== <<0.1.1>>, 2024-04-15
+
+=== Fixed
+
+- Link not opening on Chrome
+
 == <<0.1.0>>, 2024-04-08
 
 === Added
