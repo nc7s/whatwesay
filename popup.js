@@ -107,6 +107,16 @@ async function main() {
 	for (const source of Object.keys(searchers)) {
 		queryAndShow(source, { url, title })
 	}
+
+	if (typeof chrome !== 'undefined') {
+		document.addEventListener('click', e => {
+			const aEl = e.target.closest('a')
+			if (aEl !== null) {
+				e.preventDefault()
+				chrome.tabs.create({ url: aEl.href, active: false })
+			}
+		})
+	}
 }
 
 function setTabStatus(source, status) {
@@ -126,7 +136,7 @@ function setResults(source, results) {
 		const itemEl = document.createElement('li')
 
 		itemEl.innerHTML = `
-		<p><a href="${result.url}">${result.title}</a></p>
+		<p><a href="${result.url}" target="_blank">${result.title}</a></p>
 		<p class="info">
 		${timestampToAgo(result.created)} by ${result.author},
 		${result.score} point${result.score > 1 ? 's' : ''},
